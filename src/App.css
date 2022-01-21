@@ -1,3 +1,4 @@
+/*overall design of the app and it's positioning*/
 .App{
   background: linear-gradient(#4568dc, #b06ab3);
   height: 100vh;
@@ -5,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+/*Designs the header portion of the app, including color and positioning*/
 .header {
   height: 4rem;
   width: 100%;
@@ -15,7 +16,7 @@
   padding: 0 1rem; 
   background: rgb(51, 51, 88);
 }
-
+/*Positioning and size of logo*/
 .logo {
   height: 3.5rem;
   width: 3.5rem;
@@ -26,14 +27,14 @@
   border-radius: 50%;
   border: 2px solid black;
 }
-
+/*Title "LetsChat", changed its color, size, and position*/
 .title {
   color:white;
   font-weight: bold;
   font-size: 2rem;
   margin-left: 1rem;
 }
-
+/*affects everything in the chat box area of the app, position and color*/
 .footer {
   height: 4rem;
   width: 100%;
@@ -44,7 +45,7 @@
   background: rgb(51, 51, 88);
   position: relative;
 }
-
+/*Design of the chat box, color, position, and overall look*/
 .text-input {
   width: 100%;
   border: 1px solid #4568dc;
@@ -53,9 +54,9 @@
   padding: 0 1rem;
   background: whitesmoke;
   color: black;
-  font-weight: bold;
+  font-weight: bold; /*Made it so that the user's messages typed looks bold*/
 }
-
+/*The button to submit response, changed design and color*/
 .send{
   background: black;
   color: #b06ab3;
