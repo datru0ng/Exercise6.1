@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.App{
+  background: linear-gradient(#4568dc, #b06ab3);
+  height: 100vh;
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  height: 4rem;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display:flex;
+  align-items:center;
+  padding: 0 1rem; 
+  background: rgb(51, 51, 88);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: url("https://i.imgur.com/QsVdXvw.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.title {
+  color:white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.footer {
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display:flex;
+  align-items:center;
+  padding: 0 1rem; 
+  background: rgb(51, 51, 88);
+  position: relative;
+}
+
+.text-input {
+  width: 100%;
+  border: 1px solid #4568dc;
+  height: 2rem;
+  border-radius:1rem;
+  padding: 0 1rem;
+  background: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+
+.send{
+  background: black;
+  color: #b06ab3;
+  border-radius: 50%;
+  border:none;
+  height:1.7rem;
+  width:1.7rem;
+  position: absolute;
+  right: 1.15rem;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 .3rem .15rem .4rem;
 }
