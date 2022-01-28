@@ -1,0 +1,36 @@
+/*affects everything in the chat box area of the app, position and color*/
+.footer {
+    height: 4rem;
+    width: 100%;
+    border-top: 2px solid rgb(28, 121, 19);
+    display:flex;
+    align-items:center;
+    padding: 0 1rem; 
+    background: rgb(51, 51, 88, 0.5);
+    position: relative;
+  }
+  /*Design of the chat box, color, position, and overall look*/
+  .text-input {
+    width: 100%;
+    border: 1px solid #4568dc;
+    height: 2rem;
+    border-radius:1rem;
+    padding: 0 1rem;
+    background: whitesmoke;
+    color: black;
+    font-weight: bold; /*Made it so that the user's messages typed looks bold*/
+  }
+  /*The button to submit response, changed design and color*/
+  .send{
+    background: black;
+    color: rgb(9, 170, 9);
+    border-radius: 50%;
+    border:none;
+    height:1.7rem;
+    width:1.7rem;
+    position: absolute;
+    right: 1.15rem;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 .3rem .15rem .4rem;
+  }
