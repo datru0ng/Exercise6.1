@@ -1,6 +1,6 @@
-
 import React from "react"
 
+/*A different way for React to display the header using props, confusing*/
 
 class Header extends React.Component {
     constructor(props){
