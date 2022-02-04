@@ -17,12 +17,10 @@ function App() {
     };
     setMessages([newMessage, ...messages]); //In the function setMessages, all the newMessage will come before all the previous messages
   }
-  function takePicture() {
-    takePicture = (img) => {
+    let takePicture = (img) => {
       console.log(img)
       setShowCamera(false)
     }
-  }
   return (
     <div className="App">
       <header className="header">
@@ -36,9 +34,8 @@ function App() {
         {showCamera && <Camera takePicture={takePicture} />}
         </div>
         {/* everything we type will go through the function sendMessage that will add the words we type in to the array messages */}
-      <TextInput sendMessage={text=> props.onSend(text)} 
-      showCamera={()=>setShowCamera(true)}/>
-      <TextInput sendMessage={sendMessage}/>
+      <TextInput sendMessage={sendMessage}
+        showCamera={()=>setShowCamera(true)}/>
     </div>
   );
 }
