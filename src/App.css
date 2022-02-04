@@ -56,3 +56,7 @@
   border-radius: 5rem 0 5rem 0 ;
   border: 0.1px dashed black;
 }
+
+.text-input > input {
+  width:calc(100% - 50px);
+}
