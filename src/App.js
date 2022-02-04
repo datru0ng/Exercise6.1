@@ -29,7 +29,7 @@ function App() {
       </header>
       <div className="messages">
         {messages.map((msg)=>{
-          return <Message {...msg} />; {/*need clarification*/}
+          return <Message {...msg} />; {/*...=spread operator*/}
         })}
         {showCamera && <Camera takePicture={takePicture} />}
         </div>
