@@ -7,6 +7,7 @@ function NamePicker(props){
     // this is the state of the name itself
     const [name, setName] = useState("");
 
+    // Toggles the ability to input username and keeps track of the current username the user put in
     function ok() {
         props.setUsername(name);
         setEditName(false);

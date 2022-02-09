@@ -75,17 +75,20 @@
   width: calc(100% - 50px);
 }
 
+/* The component of the input and button*/
 .nameInput {
   display: flex;
   align-items: center;
   margin-left: 2rem;
 }
 
+/*The icon*/
 .nameInput svg {
   stroke: black;
   cursor: pointer;
 }
 
+/*What is displayed after confirming*/
 .nameInputName {
   color: black;
   margin-right: 0.5rem;
@@ -93,6 +96,7 @@
   font-weight: bold;
 }
 
+/*The inputting username section*/
 .UserName {
   border-radius: 10px;
   padding: 2px 10px;
@@ -101,6 +105,7 @@
   background-color: rgb(214, 248, 201);
 }
 
+/*The confirm button*/
 .submit {
   border-radius: 10px;
   border-width: 1px;
