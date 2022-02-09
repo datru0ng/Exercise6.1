@@ -8,14 +8,17 @@ import NamePicker from './NamePicker';
 //Everything on the interest is arrays of objects!!
 
 function App() {
-  const [messages, setMessages] = useState([]); //The variable messages is the current state, and setMessages is the function that keeps track of what is going in?
+  let [messages, setMessages] = useState([]); //The variable messages is the current state, and setMessages is the function that keeps track of what is going in?
   const [showCamera, setShowCamera] = useState(false)
+
+  // our username
+  let [username, setUsername] = useState('');
 
   function sendMessage(text){
     const newMessage = {
       text, 
       time: Date.now(), 
-      user: "Danny",
+      user: username,
     };
     setMessages([newMessage, ...messages]); //In the function setMessages, all the newMessage will come before all the previous messages
   }
@@ -29,12 +32,12 @@ function App() {
       <header className="header">
         <div className="logo"/>
         <span className="title">LetsChat!</span>
-        <NamePicker/>
+        <NamePicker setUsername={setUsername}/>
       </header>
 
       <div className="messages">
-        {messages.map((msg)=>{
-          return <Message {...msg} />; {/*...=spread operator*/}
+        {messages.map((msg, i)=>{
+          return <Message {...msg} key={i} fromMe={msg.user === username} />; {/*...=spread operator*/}
         })}
         {showCamera && <Camera takePicture={takePicture} />}
         </div>
