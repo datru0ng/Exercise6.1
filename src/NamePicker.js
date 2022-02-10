@@ -25,7 +25,7 @@ function NamePicker(props){
     }
     return (
         <div className="nameInput">            
-            <span className="nameInputName">{"Welcome " + name + "!" || "Set Username:"}</span>
+            <span className="nameInputName">{ name || "Set Username:"}</span>
             <FiEdit size="24" onClick={() => setEditName(true)}/>
         </div>
     );
