@@ -4,11 +4,12 @@ import {useState} from "react";
 import Message from './Message';
 import Camera from 'react-snap-pic'
 import NamePicker from './NamePicker';
+import { useDB, db } from './db';
 
 //Everything on the interest is arrays of objects!!
 
 function App() {
-  let [messages, setMessages] = useState([]); //The variable messages is the current state, and setMessages is the function that keeps track of what is going in?
+  const messages = useDB();
   const [showCamera, setShowCamera] = useState(false)
 
   // our username
@@ -20,7 +21,7 @@ function App() {
       time: Date.now(), 
       user: username,
     };
-    setMessages([newMessage, ...messages]); //In the function setMessages, all the newMessage will come before all the previous messages
+    db.send(newMessage);
   }
 
     let takePicture = (img) => {
