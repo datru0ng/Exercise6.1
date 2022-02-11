@@ -55,16 +55,19 @@
   border-radius: 5rem 0 5rem 0 ;
 }
 
+/*username that is displayed on top of message*/
 .message-user {
   font-size: .8rem;
   color: rgb(1, 88, 1);
   margin-left: 1.5rem;
 }
 
+/*This div box is for both the message of the user and the username*/
 .all-message {
   margin: 0.4rem;
 }
 
+/*Makes it so that your name is on the right side while everyone else is on the left*/
 .message-row {
   display: flex;
   align-items: center;
