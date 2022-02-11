@@ -52,25 +52,26 @@
   color: white;
   background: rgb(9, 170, 9);
   padding: 0.3rem 1.4rem;
-  margin: 0.5rem;
   border-radius: 5rem 0 5rem 0 ;
 }
 
 .message-user {
-  position:absolute;
-  left: 2rem;
-  font-size: 0.6rem;
-  margin-top: -1.1rem;
+  font-size: .8rem;
   color: rgb(1, 88, 1);
+  margin-left: 1.5rem;
 }
-/*
+
+.all-message {
+  margin: 0.4rem;
+}
+
 .message-row {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   flex-direction: row;
 }
-*/
+
 .text-input > input {
   width: calc(100% - 50px);
 }
@@ -91,7 +92,7 @@
 /*What is displayed after confirming*/
 .nameInputName {
   color: black;
-  margin-right: 0.5rem;
+  margin: 0.5rem;
   font-size: .9rem;
   font-weight: bold;
 }

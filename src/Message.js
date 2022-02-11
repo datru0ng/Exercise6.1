@@ -7,11 +7,12 @@ export default function Message(props) {
     return (
         <div 
             className="message-row"
-            style={{ flexDirection: props.fromMe ? "row-reverse": "row"}}
-        >
-            <div className="message">
+            style={{ flexDirection: props.fromMe ? "row-reverse": "row"}}>
+            <div className="all-message">
                 <span className="message-user">{props.user}</span>
-                <span> {props.text} </span>
+                <div className="message">
+                    <span> {props.text} </span>
+                </div>
             </div>
         </div>
     );
